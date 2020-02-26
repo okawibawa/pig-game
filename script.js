@@ -23,10 +23,23 @@ rollDice.addEventListener('click', function() {
   imgDice.src = 'img/dice-' + dice + '.png';
 
   if (dice !== 1) {
-    document.querySelector('#current-' + activePlayer).textContent = dice;
+    roundScore += dice;
+    document.querySelector('#current-' + activePlayer).textContent = roundScore;
   } else {
-    //  switch player
+    //  set the round score to 0
+    document.querySelector(
+      '#current-' + activePlayer,
+    ).textContent = roundScore = 0;
+
+    // switch the player
+    activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
+
+    // add or remove class
+    document.querySelector('.player-0-panel').classList.toggle('active');
+    document.querySelector('.player-1-panel').classList.toggle('active');
   }
 });
 
-holdDice.addEventListener('click', function() {});
+holdDice.addEventListener('click', function() {
+  document.querySelector('#score-' + activePlayer).textContent = roundScore;
+});
