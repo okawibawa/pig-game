@@ -16,7 +16,7 @@ document.getElementById('score-1').textContent = 0;
 
 imgDice.style.display = 'none';
 
-function nexPlayer() {
+function nextPlayer() {
   //  set the round score to 0
   document.querySelector(
     '#current-' + activePlayer,
@@ -44,7 +44,7 @@ rollDice.addEventListener('click', function() {
     roundScore += dice;
     document.querySelector('#current-' + activePlayer).textContent = roundScore;
   } else {
-    nexPlayer();
+    nextPlayer();
   }
 });
 
@@ -70,6 +70,6 @@ holdDice.addEventListener('click', function() {
       .classList.remove('active');
   } else {
     // next player
-    nexPlayer();
+    nextPlayer();
   }
 });
