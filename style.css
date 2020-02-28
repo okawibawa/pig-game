@@ -44,7 +44,7 @@ body {
 .player-1-panel {
   width: 50%;
   float: left;
-  height: 600px;
+  height: 700px;
   padding: 100px;
 }
 
@@ -58,7 +58,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 100;
-  margin-top: 20px;
+  margin-top: 70px;
   margin-bottom: 10px;
   position: relative;
 }
@@ -123,6 +123,23 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 
+input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  font-family: 'Lato';
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 10px;
+  top: 100px;
+  text-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
 button:hover {
   font-weight: 600;
 }
@@ -153,6 +170,10 @@ i {
 }
 .btn-hold {
   top: 467px;
+}
+
+.btn-submit {
+  top: 160px;
 }
 
 .dice {
