@@ -166,10 +166,10 @@ i {
   top: 45px;
 }
 .btn-roll {
-  top: 403px;
+  top: 503px;
 }
 .btn-hold {
-  top: 467px;
+  top: 567px;
 }
 
 .btn-submit {
@@ -183,6 +183,14 @@ i {
   transform: translateX(-50%);
   height: 100px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+#dice-1 {
+  top: 230px;
+}
+
+#dice-2 {
+  top: 380px;
 }
 
 .winner {
