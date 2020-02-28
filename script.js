@@ -108,5 +108,11 @@ function init() {
 }
 
 function getScore() {
-  goalScore = document.querySelector('#setScore').value;
+  inputValue = document.querySelector('#setScore').value;
+
+  if (inputValue) {
+    goalScore = inputValue;
+  } else {
+    goalScore = 100;
+  }
 }
